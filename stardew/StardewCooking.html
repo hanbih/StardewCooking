@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StardewCooking</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Stardew Valley Cooking Tracker</h1>
+        <p>Check off each recipe as you learn/cook them, and each ingredient as you collect them!</p>
+    </header>
+
+    <main>
+
+        <section id="recipes">
+            <h2>Recipes</h2>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="recipe-search">Search recipe</label>
+                    <input type="search" id="recipe-search" name="recipe-search">
+                    <button type="submit">Search</button>
+                </p>
+            </form>
+
+            <h3>Fried Egg</h3>
+            <img src="images/fried-egg.png" alt="Fried egg">
+            <p><strong>Ingredients:</strong> Egg (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="fried-egg-learned"
+                       name="fried-egg-learned">
+                <label for="fried-egg-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="fried-egg-cooked"
+                       name="fried-egg-cooked">
+                <label for="fried-egg-cooked">Cooked</label>
+            </p>
+
+            <h3>Omelet</h3>
+            <img src="images/omelet.png" alt="Omelet">
+            <p><strong>Ingredients:</strong> Egg (1), Milk (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="omelet-learned"
+                       name="omelet-learned">
+                <label for="omelet-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="omelet-cooked"
+                       name="omelet-cooked">
+                <label for="omelet-cooked">Cooked</label>
+            </p>
+
+            <h3>Cookies</h3>
+            <img src="images/cookies.png" alt="Cookies">
+            <p><strong>Ingredients:</strong> Wheat Flour (1), Sugar (1), Egg (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="cookies-learned"
+                       name="cookies-learned">
+                <label for="cookies-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="cookies-cooked"
+                       name="cookies-cooked">
+                <label for="cookies-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Pancakes</h3>
+            <img src="images/pancakes.png" alt="Pancakes">
+            <p><strong>Ingredients:</strong> Wheat Flour (1), Egg (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="pancakes-learned"
+                       name="pancakes-learned">
+                <label for="pancakes-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="pancakes-cooked"
+                       name="pancakes-cooked">
+                <label for="pancakes-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Parsnip Soup</h3>
+            <img src="images/parsnip-soup.png" alt="Parsnip soup">
+            <p><strong>Ingredients:</strong> Parsnip (1), Milk (1), Vinegar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="parsnip-soup-learned"
+                       name="parsnip-soup-learned">
+                <label for="parsnip-soup-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="parsnip-soup-cooked"
+                       name="parsnip-soup-cooked">
+                <label for="parsnip-soup-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Eggplant Parmesan</h3>
+            <img src="images/eggplant-parmesan.png" alt="Eggplant Parmesan">
+            <p><strong>Ingredients:</strong> Eggplant (1), Tomato (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="eggplant-parmesan-learned"
+                       name="eggplant-parmesan-learned">
+                <label for="eggplant-parmesan-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="eggplant-parmesan-cooked"
+                       name="eggplant-parmesan-cooked">
+                <label for="eggplant-parmesan-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Triple Shot Espresso</h3>
+            <img src="images/triple-shot-espresso.png" alt="Triple Shot Espresso">
+            <p><strong>Ingredients:</strong> Coffee (3)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="triple-shot-espresso-learned"
+                       name="triple-shot-espresso-learned">
+                <label for="triple-shot-espresso-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="triple-shot-espresso-cooked"
+                       name="triple-shot-espresso-cooked">
+                <label for="triple-shot-espresso-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Crispy Bass</h3>
+            <img src="images/crispy-bass.png" alt="Crispy Bass">
+            <p><strong>Ingredients:</strong> Largemouth Bass (1), Wheat Flour (1), Oil (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="crispy-bass-learned"
+                       name="crispy-bass-learned">
+                <label for="crispy-bass-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="crispy-bass-cooked"
+                       name="crispy-bass-cooked">
+                <label for="crispy-bass-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Sashimi</h3>
+            <img src="images/sashimi.png" alt="Sashimi">
+            <p><strong>Ingredients:</strong> Fish (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="sashimi-learned"
+                       name="sashimi-learned">
+                <label for="sashimi-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="sashimi-cooked"
+                       name="sashimi-cooked">
+                <label for="sashimi-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Stuffing</h3>
+            <img src="images/stuffing.png" alt="Stuffing">
+            <p><strong>Ingredients:</strong> Bread (1), Cranberries (1), Hazelnut (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="stuffing-learned"
+                       name="stuffing-learned">
+                <label for="stuffing-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="stuffing-cooked"
+                       name="stuffing-cooked">
+                <label for="stuffing-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Miner's Treat</h3>
+            <img src="images/miners-treat.png" alt="Miner's Treat">
+            <p><strong>Ingredients:</strong> Sugar (1), Milk (1), Cave Carrot (2)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="miners-treat-learned"
+                       name="miners-treat-learned">
+                <label for="miners-treat-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="miners-treat-cooked"
+                       name="miners-treat-cooked">
+                <label for="miners-treat-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Stir Fry</h3>
+            <img src="images/stir-fry.png" alt="Stir Fry">
+            <p><strong>Ingredients:</strong> Bok Choy (1), Cave Carrot (1), Common Mushroom (1), Oil (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="stir-fry-learned"
+                       name="stir-fry-learned">
+                <label for="stir-fry-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="stir-fry-cooked"
+                       name="stir-fry-cooked">
+                <label for="stir-fry-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Glazed Yams</h3>
+            <img src="images/glazed-yams.png" alt="Glazed Yams">
+            <p><strong>Ingredients:</strong> Yam (1), Sugar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="glazed-yams-learned"
+                       name="glazed-yams-learned">
+                <label for="glazed-yams-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="glazed-yams-cooked"
+                       name="glazed-yams-cooked">
+                <label for="glazed-yams-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Pink Cake</h3>
+            <img src="images/pink-cake.png" alt="Pink Cake">
+            <p><strong>Ingredients:</strong> Melon (1), Wheat Flour (1), Sugar (1), Egg (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="pink-cake-learned"
+                       name="pink-cake-learned">
+                <label for="pink-cake-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="pink-cake-cooked"
+                       name="pink-cake-cooked">
+                <label for="pink-cake-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Rhubarb Pie</h3>
+            <img src="images/rhubarb-pie.png" alt="Rhubarb Pie">
+            <p><strong>Ingredients:</strong> Rhubarb (1), Wheat Flour (1), Sugar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="rhubarb-pie-learned"
+                       name="rhubarb-pie-learned">
+                <label for="rhubarb-pie-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="rhubarb-pie-cooked"
+                       name="rhubarb-pie-cooked">
+                <label for="rhubarb-pie-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Blackberry Cobbler</h3>
+            <img src="images/blackberry-cobbler.png" alt="Blackberry Cobbler">
+            <p><strong>Ingredients:</strong> Blackberry (2), Wheat Flour (1), Sugar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="blackberry-cobbler-learned"
+                       name="blackberry-cobbler-learned">
+                <label for="blackberry-cobbler-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="blackberry-cobbler-cooked"
+                       name="blackberry-cobbler-cooked">
+                <label for="blackberry-cobbler-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Ginger Ale</h3>
+            <img src="images/ginger-ale.png" alt="Ginger Ale">
+            <p><strong>Ingredients:</strong> Ginger (3), Sugar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="ginger-ale-learned"
+                       name="ginger-ale-learned">
+                <label for="ginger-ale-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="ginger-ale-cooked"
+                       name="ginger-ale-cooked">
+                <label for="ginger-ale-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Moss Soup</h3>
+            <img src="images/moss-soup.png" alt="Moss Soup">
+            <p><strong>Ingredients:</strong> Moss (20)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="moss-soup-learned"
+                       name="moss-soup-learned">
+                <label for="moss-soup-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="moss-soup-cooked"
+                       name="moss-soup-cooked">
+                <label for="moss-soup-cooked">Cooked</label>
+            </p>
+
+
+            <h3>Banana Pudding</h3>
+            <img src="images/banana-pudding.png" alt="Banana Pudding">
+            <p><strong>Ingredients:</strong> Banana (1), Milk (1), Sugar (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="banana-pudding-learned"
+                       name="banana-pudding-learned">
+                <label for="banana-pudding-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="banana-pudding-cooked"
+                       name="banana-pudding-cooked">
+                <label for="banana-pudding-cooked">Cooked</label>
+            </p>
+            
+            <h3>Baked Fish</h3>
+            <img src="images/baked-fish.png" alt="Baked fish">
+            <p><strong>Ingredients:</strong> Sunfish (1), Bream (1), Wheat Flour (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="bakedfish-learned"
+                       name="bakedfish-learned">
+                <label for="bakedfish-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="bakedfish-cooked"
+                       name="bakedfish-cooked">
+                <label for="bakedfish-cooked">Cooked</label>
+            </p>
+
+            <h3>Fried Calamari</h3>
+            <img src="images/fried-calamari.png" alt="Fried calamari">
+            <p><strong>Ingredients:</strong> Squid (1), Oil (1), Wheat Flour (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="friedcalamari-learned"
+                       name="friedcalamari-learned">
+                <label for="friedcalamari-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="friedcalamari-cooked"
+                       name="friedcalamari-cooked">
+                <label for="friedcalamari-cooked">Cooked</label>
+            </p>
+
+            <h3>Pizza</h3>
+            <img src="images/pizza.png" alt="Pizza">
+            <p><strong>Ingredients:</strong> Wheat Flour (1), Tomato (1), Cheese (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="pizza-learned"
+                       name="pizza-learned">
+                <label for="pizza-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="pizza-cooked"
+                       name="pizza-cooked">
+                <label for="pizza-cooked">Cooked</label>
+            </p>
+            
+            <h3>Hashbrowns</h3>
+            <img src="images/hashbrowns.png" alt="Pizza">
+            <p><strong>Ingredients:</strong> Potato (1), Oil (1)</p>
+
+            <p>
+                <input type="checkbox"
+                       id="hashbrowns-learned"
+                       name="hashbrowns-learned">
+                <label for="hashbrowns-learned">Learned</label>
+            </p>
+
+            <p>
+                <input type="checkbox"
+                       id="hashbrowns-cooked"
+                       name="hashbrowns-cooked">
+                <label for="hashbrowns-cooked">Cooked</label>
+            </p>
+
+        </section>
+
+<section id="ingredients">
+    <h2>Ingredients</h2>
+
+    <h3>Fish</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="sunfish">
+            Sunfish
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="bream">
+            Bream
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="squid">
+            Squid
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="sea-cucumber">
+            Sea Cucumber
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="carp">
+            Carp
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="salmon">
+            Salmon
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="tuna">
+            Tuna
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="shrimp">
+            Shrimp
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="rainbow-trout">
+            Rainbow Trout
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="eel">
+            Eel
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="sardine">
+            Sardine
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="flounder">
+            Flounder
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="midnight-carp">
+            Midnight Carp
+        </label>
+    </p>
+
+
+    <h3>Crops</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="cauliflower">
+            Cauliflower
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="parsnip">
+            Parsnip
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="beet">
+            Beet
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="green-bean">
+            Green Bean
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="potato">
+            Potato
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="amaranth">
+            Amaranth
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="kale">
+            Kale
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="red-cabbage">
+            Red Cabbage
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="hot-pepper">
+            Hot Pepper
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="melon">
+            Melon
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="rhubarb">
+            Rhubarb
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="corn">
+            Corn
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="radish">
+            Radish
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="eggplant">
+            Eggplant
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="blue-jazz">
+            Blue Jazz
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="pumpkin">
+            Pumpkin
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="yam">
+            Yam
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="bok-choy">
+            Bok Choy
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="artichoke">
+            Artichoke
+        </label>
+    </p>
+
+
+    <h3>Fruit</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="blueberry">
+            Blueberry
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="cranberries">
+            Cranberries
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="coconut">
+            Coconut
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="banana">
+            Banana
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="mango">
+            Mango
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="wild-plum">
+            Wild Plum
+        </label>
+    </p>
+
+
+    <h3>Foraged</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="morel">
+            Morel
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="common-mushroom">
+            Common Mushroom
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="green-algae">
+            Green Algae
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="seaweed">
+            Seaweed
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="hazelnut">
+            Hazelnut
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="winter-root">
+            Winter Root
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="moss">
+            Moss
+        </label>
+    </p>
+
+
+    <h3>Animal Products</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="milk">
+            Milk
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="mayonnaise">
+            Mayonnaise
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="void-mayonnaise">
+            Void Mayonnaise
+        </label>
+    </p>
+
+
+    <h3>Misc</h3>
+
+    <p>
+        <label>
+            <input type="checkbox" name="wheat-flour">
+            Wheat Flour
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="oil">
+            Oil
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="sugar">
+            Sugar
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="rice">
+            Rice
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="bread">
+            Bread
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="tortilla">
+            Tortilla
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="hashbrowns">
+            Hashbrowns
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="pancakes">
+            Pancakes
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="maple-syrup">
+            Maple Syrup
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="coffee">
+            Coffee
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="squid-ink">
+            Squid Ink
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="taro-root">
+            Taro Root
+        </label>
+    </p>
+
+    <p>
+        <label>
+            <input type="checkbox" name="periwinkle">
+            Periwinkle
+        </label>
+    </p>
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>Happy cooking!</p>
+    </footer>
+
+</body>
+
+</html>
