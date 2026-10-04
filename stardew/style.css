@@ -1,0 +1,94 @@
+body {
+font-family: "Inter", sans-serif;
+background-color: #f5f1df;
+color: #804928;
+margin: 0;
+}
+
+/* TITLE */
+h1 {
+font-family: "Pixelify Sans", sans-serif;
+}
+
+/* HEADER */
+header {
+background-color: #316420;
+color: #ffffff;
+text-align: center;
+padding: 30px;
+}
+
+header h1 {
+margin: 0;
+}
+
+.header img {
+width: 200px;
+height: auto;
+}
+
+/* MAIN */
+main {
+max-width: 1050px;
+margin: 30px auto;
+padding: 20px;
+}
+
+/* SECTIONS */
+section {
+background-color: #f3d396;
+padding: 30px;
+margin-bottom: 30px;
+}
+
+h2 {
+font-family: "Pixelify Sans", sans-serif;
+font-size: 35px;
+color: #134582;
+border-bottom: 2px solid #134582;
+}
+
+h3 {
+font-family: "Pixelify Sans", sans-serif;
+font-size: 23px;
+color: #134582;
+margin-top: 30px;
+}
+
+img {
+width: 80px;
+height: 80px;
+}
+
+input[type="search"] {
+font-family: "Inter", sans-serif;
+padding: 6px;
+}
+
+button {
+font-family: "Inter", sans-serif;
+padding: 8px 15px;
+background-color: #d8a84e;
+color: white;
+border: none; 
+}
+
+button:hover {
+background-color: #bd8f38;
+}
+
+/* FOOTER */
+footer {
+background-color: #316420;
+color: white;
+text-align: center;
+padding: 15px;
+}
+
+footer a {
+color: white;
+text-decoration: underline;
+}
+a:hover {
+color: #d8c98b;
+}
