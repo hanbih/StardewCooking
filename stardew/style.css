@@ -1,94 +1,102 @@
+
 body {
-font-family: "Inter", sans-serif;
-background-color: #f5f1df;
-color: #804928;
-margin: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f5f1df;
+    color: #804928;
+    margin: 0;
 }
 
-/* TITLE */
+/* Headings */
+h1, h2, h3 {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
 h1 {
-font-family: "Pixelify Sans", sans-serif;
-}
-
-/* HEADER */
-header {
-background-color: #316420;
-color: #ffffff;
-text-align: center;
-padding: 30px;
-}
-
-header h1 {
-margin: 0;
-}
-
-.header img {
-width: 200px;
-height: auto;
-}
-
-/* MAIN */
-main {
-max-width: 1050px;
-margin: 30px auto;
-padding: 20px;
-}
-
-/* SECTIONS */
-section {
-background-color: #f3d396;
-padding: 30px;
-margin-bottom: 30px;
+    color: #316420;
 }
 
 h2 {
-font-family: "Pixelify Sans", sans-serif;
-font-size: 35px;
-color: #134582;
-border-bottom: 2px solid #134582;
+    font-size: 35px;
+    color: #134582;
+
+    padding-bottom: 8px;
 }
 
 h3 {
-font-family: "Pixelify Sans", sans-serif;
-font-size: 23px;
-color: #134582;
-margin-top: 30px;
+    font-size: 23px;
+    color: #134582;
 }
 
-img {
-width: 80px;
-height: 80px;
+/* Navbar  */
+.nav-pills .nav-link {
+    font-family: "Inter", sans-serif;
+    color: #804928;
 }
 
-input[type="search"] {
-font-family: "Inter", sans-serif;
-padding: 6px;
+.nav-pills .nav-link.active {
+    background-color: #316420;
+    color: #ffffff;
 }
 
-button {
-font-family: "Inter", sans-serif;
-padding: 8px 15px;
-background-color: #d8a84e;
-color: white;
-border: none; 
+.nav-pills .nav-link:hover {
+    background-color: #78a16c;
+    color: white;
 }
 
-button:hover {
-background-color: #bd8f38;
+/* Sections */
+section {
+    background-color: #f3d396;
+    padding: 30px;
+    border-radius: 8px;
 }
 
-/* FOOTER */
+/* Recipe images */
+.recipe-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 15px auto 0;
+}
+
+/* Cards */
+.card {
+    background-color: #fffaf0;
+    color: #804928;
+    border: 1px solid #d8c28f;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #316420;
+    border-color: #316420;
+}
+
+.btn-primary:hover {
+    background-color: #244b18;
+    border-color: #244b18;
+}
+
+/* Checkboxes */
+.form-check-input:checked {
+    background-color: #316420;
+    border-color: #316420;
+}
+
+/* Footer */
 footer {
-background-color: #316420;
-color: white;
-text-align: center;
-padding: 15px;
+    background-color: #316420;
+    color: white;
 }
 
 footer a {
-color: white;
-text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
-a:hover {
-color: #d8c98b;
+
+footer a:hover {
+    color: #d8c98b;
 }
