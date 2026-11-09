@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Track Stardew Valley cooking recipes and ingredients.">
+    <meta name="author" content="YOUR NAME HERE">
+    <title>Stardew Valley Cooking Tracker</title>
+
+    <!-- Bootstrap v5.3.8 -->
+    <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row align-items-center g-3 py-2">
+
+        <!-- Logo -->
+        <div class="col-4 col-md-3">
+            <img src="images/chicken.png"
+                 alt="Stardew Valley Cooking Tracker logo"
+                 class="img-fluid">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md col-8 col-md-9" aria-label="Main navigation">
+
+            <!-- Hamburger button -->
+            <button class="navbar-toggler ms-auto" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav nav-pills flex-column flex-md-row ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#recipes">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ingredients">Ingredients</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+</div>
+
+<main class="container my-4">
+
+        <div class="text-center mb-4">
+            <h1>Stardew Valley Cooking Tracker</h1>
+            <p class="d-none d-sm-block">Check off each recipe as you learn or cook it, and each ingredient as you collect it!</p>
+        </div>
+
+        <!-- Progress Tracker -->
+        <section class="mb-5">
+            <h2>My Cooking Progress</h2>
+
+            <!-- Recipes Learned -->
+            <p class="mb-1">Recipes Learned: 0 / 23</p>
+            <div class="progress mb-3" role="progressbar"
+                 aria-label="Recipes learned"
+                 aria-valuenow="0"
+                 aria-valuemin="0"
+                 aria-valuemax="23">
+                <div class="progress-bar" style="width: 0%"></div>
+            </div>
+
+            <!-- Recipes Cooked -->
+            <p class="mb-1">Recipes Cooked: 0 / 23</p>
+            <div class="progress mb-3" role="progressbar"
+                 aria-label="Recipes cooked"
+                 aria-valuenow="0"
+                 aria-valuemin="0"
+                 aria-valuemax="23">
+                <div class="progress-bar" style="width: 0%"></div>
+            </div>
+        </section>
+
+        <!-- Recipes -->
+        <section id="recipes" class="mb-5">
+            <h2>Recipes</h2>
+
+            <!-- Search form --> 
+            <form action="#" method="get" class="mb-4">
+                <label for="recipe-search" class="form-label">Search recipes</label>
+                <div class="input-group">
+                    <input type="search" class="form-control" id="recipe-search" name="recipe-search" placeholder="Enter a recipe name">
+                    <!-- Button --> 
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+
+            <!-- Recipe cards --> 
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/fried-egg.png" class="card-img-top recipe-img" alt="Fried egg">
+                        <div class="card-body">
+                            <h3 class="card-title">Fried Egg</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Egg (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="fried-egg-learned">
+                                <label class="form-check-label" for="fried-egg-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="fried-egg-cooked">
+                                <label class="form-check-label" for="fried-egg-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 1 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/omelet.png" class="card-img-top recipe-img" alt="Omelet">
+                        <div class="card-body">
+                            <h3 class="card-title">Omelet</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Egg (1), Milk (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="omelet-learned">
+                                <label class="form-check-label" for="omelet-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="omelet-cooked">
+                                <label class="form-check-label" for="omelet-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 2 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/cookies.png" class="card-img-top recipe-img" alt="Cookies">
+                        <div class="card-body">
+                            <h3 class="card-title">Cookies</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Wheat Flour (1), Sugar (1), Egg (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cookies-learned">
+                                <label class="form-check-label" for="cookies-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cookies-cooked">
+                                <label class="form-check-label" for="cookies-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 3 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/pancakes.png" class="card-img-top recipe-img" alt="Pancakes">
+                        <div class="card-body">
+                            <h3 class="card-title">Pancakes</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Wheat Flour (1), Egg (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pancakes-learned">
+                                <label class="form-check-label" for="pancakes-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pancakes-cooked">
+                                <label class="form-check-label" for="pancakes-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 4 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/parsnip-soup.png" class="card-img-top recipe-img" alt="Parsnip soup">
+                        <div class="card-body">
+                            <h3 class="card-title">Parsnip Soup</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Parsnip (1), Milk (1), Vinegar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="parsnip-soup-learned">
+                                <label class="form-check-label" for="parsnip-soup-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="parsnip-soup-cooked">
+                                <label class="form-check-label" for="parsnip-soup-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 5 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/eggplant-parmesan.png" class="card-img-top recipe-img" alt="Eggplant Parmesan">
+                        <div class="card-body">
+                            <h3 class="card-title">Eggplant Parmesan</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Eggplant (1), Tomato (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="eggplant-parmesan-learned">
+                                <label class="form-check-label" for="eggplant-parmesan-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="eggplant-parmesan-cooked">
+                                <label class="form-check-label" for="eggplant-parmesan-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 6 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/triple-shot-espresso.png" class="card-img-top recipe-img" alt="Triple Shot Espresso">
+                        <div class="card-body">
+                            <h3 class="card-title">Triple Shot Espresso</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Coffee (3)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="triple-shot-espresso-learned">
+                                <label class="form-check-label" for="triple-shot-espresso-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="triple-shot-espresso-cooked">
+                                <label class="form-check-label" for="triple-shot-espresso-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 7 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/crispy-bass.png" class="card-img-top recipe-img" alt="Crispy Bass">
+                        <div class="card-body">
+                            <h3 class="card-title">Crispy Bass</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Largemouth Bass (1), Wheat Flour (1), Oil (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="crispy-bass-learned">
+                                <label class="form-check-label" for="crispy-bass-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="crispy-bass-cooked">
+                                <label class="form-check-label" for="crispy-bass-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 8 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/sashimi.png" class="card-img-top recipe-img" alt="Sashimi">
+                        <div class="card-body">
+                            <h3 class="card-title">Sashimi</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Fish (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="sashimi-learned">
+                                <label class="form-check-label" for="sashimi-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="sashimi-cooked">
+                                <label class="form-check-label" for="sashimi-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 9 -->
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/stuffing.png" class="card-img-top recipe-img" alt="Stuffing">
+                        <div class="card-body">
+                            <h3 class="card-title">Stuffing</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Bread (1), Cranberries (1), Hazelnut (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stuffing-learned">
+                                <label class="form-check-label" for="stuffing-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stuffing-cooked">
+                                <label class="form-check-label" for="stuffing-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 10 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/miners-treat.png" class="card-img-top recipe-img" alt="Miner's Treat">
+                        <div class="card-body">
+                            <h3 class="card-title">Miner's Treat</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Sugar (1), Milk (1), Cave Carrot (2)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="miners-treat-learned">
+                                <label class="form-check-label" for="miners-treat-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="miners-treat-cooked">
+                                <label class="form-check-label" for="miners-treat-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 11 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/stir-fry.png" class="card-img-top recipe-img" alt="Stir Fry">
+                        <div class="card-body">
+                            <h3 class="card-title">Stir Fry</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Bok Choy (1), Cave Carrot (1), Common Mushroom (1), Oil (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stir-fry-learned">
+                                <label class="form-check-label" for="stir-fry-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stir-fry-cooked">
+                                <label class="form-check-label" for="stir-fry-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 12 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/glazed-yams.png" class="card-img-top recipe-img" alt="Glazed Yams">
+                        <div class="card-body">
+                            <h3 class="card-title">Glazed Yams</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Yam (1), Sugar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="glazed-yams-learned">
+                                <label class="form-check-label" for="glazed-yams-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="glazed-yams-cooked">
+                                <label class="form-check-label" for="glazed-yams-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 13 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/pink-cake.png" class="card-img-top recipe-img" alt="Pink Cake">
+                        <div class="card-body">
+                            <h3 class="card-title">Pink Cake</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Melon (1), Wheat Flour (1), Sugar (1), Egg (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pink-cake-learned">
+                                <label class="form-check-label" for="pink-cake-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pink-cake-cooked">
+                                <label class="form-check-label" for="pink-cake-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 14 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/rhubarb-pie.png" class="card-img-top recipe-img" alt="Rhubarb Pie">
+                        <div class="card-body">
+                            <h3 class="card-title">Rhubarb Pie</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Rhubarb (1), Wheat Flour (1), Sugar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rhubarb-pie-learned">
+                                <label class="form-check-label" for="rhubarb-pie-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rhubarb-pie-cooked">
+                                <label class="form-check-label" for="rhubarb-pie-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 15 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/blackberry-cobbler.png" class="card-img-top recipe-img" alt="Blackberry Cobbler">
+                        <div class="card-body">
+                            <h3 class="card-title">Blackberry Cobbler</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Blackberry (2), Wheat Flour (1), Sugar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="blackberry-cobbler-learned">
+                                <label class="form-check-label" for="blackberry-cobbler-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="blackberry-cobbler-cooked">
+                                <label class="form-check-label" for="blackberry-cobbler-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 16 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/ginger-ale.png" class="card-img-top recipe-img" alt="Ginger Ale">
+                        <div class="card-body">
+                            <h3 class="card-title">Ginger Ale</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Ginger (3), Sugar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ginger-ale-learned">
+                                <label class="form-check-label" for="ginger-ale-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="ginger-ale-cooked">
+                                <label class="form-check-label" for="ginger-ale-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 17 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/moss-soup.png" class="card-img-top recipe-img" alt="Moss Soup">
+                        <div class="card-body">
+                            <h3 class="card-title">Moss Soup</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Moss (20)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="moss-soup-learned">
+                                <label class="form-check-label" for="moss-soup-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="moss-soup-cooked">
+                                <label class="form-check-label" for="moss-soup-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 18 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/banana-pudding.png" class="card-img-top recipe-img" alt="Banana Pudding">
+                        <div class="card-body">
+                            <h3 class="card-title">Banana Pudding</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Banana (1), Milk (1), Sugar (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="banana-pudding-learned">
+                                <label class="form-check-label" for="banana-pudding-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="banana-pudding-cooked">
+                                <label class="form-check-label" for="banana-pudding-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 19 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/baked-fish.png" class="card-img-top recipe-img" alt="Baked Fish">
+                        <div class="card-body">
+                            <h3 class="card-title">Baked Fish</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Sunfish (1), Bream (1), Wheat Flour (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="bakedfish-learned">
+                                <label class="form-check-label" for="bakedfish-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="bakedfish-cooked">
+                                <label class="form-check-label" for="bakedfish-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 20 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/fried-calamari.png" class="card-img-top recipe-img" alt="Fried Calamari">
+                        <div class="card-body">
+                            <h3 class="card-title">Fried Calamari</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Squid (1), Oil (1), Wheat Flour (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="friedcalamari-learned">
+                                <label class="form-check-label" for="friedcalamari-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="friedcalamari-cooked">
+                                <label class="form-check-label" for="friedcalamari-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 21 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/pizza.png" class="card-img-top recipe-img" alt="Pizza">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Wheat Flour (1), Tomato (1), Cheese (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pizza-learned">
+                                <label class="form-check-label" for="pizza-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="pizza-cooked">
+                                <label class="form-check-label" for="pizza-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 22 --> 
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/hashbrowns.png" class="card-img-top recipe-img" alt="Hashbrowns">
+                        <div class="card-body">
+                            <h3 class="card-title">Hashbrowns</h3>
+                            <p class="card-text"><strong>Ingredients:</strong> Potato (1), Oil (1)</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="hashbrowns-learned">
+                                <label class="form-check-label" for="hashbrowns-learned">Learned</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="hashbrowns-cooked">
+                                <label class="form-check-label" for="hashbrowns-cooked">Cooked</label>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End recipe 23 -->   
+
+            </div> <!-- End recipe cards -->
+        </section>
+
+        <!-- Ingredients --> 
+        <section id="ingredients" class="mb-5">
+            <h2>Ingredients</h2>
+            <p>Check off the ingredients you have collected.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <!-- Fish --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Fish</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="sunfish"><label class="form-check-label" for="sunfish">Sunfish</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="bream"><label class="form-check-label" for="bream">Bream</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="squid"><label class="form-check-label" for="squid">Squid</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="sea-cucumber"><label class="form-check-label" for="sea-cucumber">Sea Cucumber</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="carp"><label class="form-check-label" for="carp">Carp</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="salmon"><label class="form-check-label" for="salmon">Salmon</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="tuna"><label class="form-check-label" for="tuna">Tuna</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="shrimp"><label class="form-check-label" for="shrimp">Shrimp</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="rainbow-trout"><label class="form-check-label" for="rainbow-trout">Rainbow Trout</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="eel"><label class="form-check-label" for="eel">Eel</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="sardine"><label class="form-check-label" for="sardine">Sardine</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="flounder"><label class="form-check-label" for="flounder">Flounder</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="midnight-carp"><label class="form-check-label" for="midnight-carp">Midnight Carp</label></div>
+                        </div>
+                    </div>
+                </div> <!-- End fish --> 
+
+                <!-- Crops --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Crops</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="cauliflower"><label class="form-check-label" for="cauliflower">Cauliflower</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="parsnip"><label class="form-check-label" for="parsnip">Parsnip</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="beet"><label class="form-check-label" for="beet">Beet</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="green-bean"><label class="form-check-label" for="green-bean">Green Bean</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="potato"><label class="form-check-label" for="potato">Potato</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="amaranth"><label class="form-check-label" for="amaranth">Amaranth</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="kale"><label class="form-check-label" for="kale">Kale</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="red-cabbage"><label class="form-check-label" for="red-cabbage">Red Cabbage</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="hot-pepper"><label class="form-check-label" for="hot-pepper">Hot Pepper</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="melon"><label class="form-check-label" for="melon">Melon</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="rhubarb"><label class="form-check-label" for="rhubarb">Rhubarb</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="corn"><label class="form-check-label" for="corn">Corn</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="radish"><label class="form-check-label" for="radish">Radish</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="eggplant"><label class="form-check-label" for="eggplant">Eggplant</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="blue-jazz"><label class="form-check-label" for="blue-jazz">Blue Jazz</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="pumpkin"><label class="form-check-label" for="pumpkin">Pumpkin</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="yam"><label class="form-check-label" for="yam">Yam</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="bok-choy"><label class="form-check-label" for="bok-choy">Bok Choy</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="artichoke"><label class="form-check-label" for="artichoke">Artichoke</label></div>
+                        </div>
+                    </div>
+                </div> <!-- End Crops --> 
+
+                <!-- Fruit --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Fruit</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="blueberry"><label class="form-check-label" for="blueberry">Blueberry</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="cranberries"><label class="form-check-label" for="cranberries">Cranberries</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="coconut"><label class="form-check-label" for="coconut">Coconut</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="banana"><label class="form-check-label" for="banana">Banana</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="mango"><label class="form-check-label" for="mango">Mango</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="wild-plum"><label class="form-check-label" for="wild-plum">Wild Plum</label></div>
+                        </div>
+                    </div>
+                </div> <!-- End Fruit --> 
+
+                <!-- Foraged --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Foraged</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="morel"><label class="form-check-label" for="morel">Morel</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="common-mushroom"><label class="form-check-label" for="common-mushroom">Common Mushroom</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="green-algae"><label class="form-check-label" for="green-algae">Green Algae</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="seaweed"><label class="form-check-label" for="seaweed">Seaweed</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="hazelnut"><label class="form-check-label" for="hazelnut">Hazelnut</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="winter-root"><label class="form-check-label" for="winter-root">Winter Root</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="moss"><label class="form-check-label" for="moss">Moss</label></div>
+                        </div>
+                    </div>
+                </div> <!-- End Foraged --> 
+
+                <!-- Animal products --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Animal Products</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="milk"><label class="form-check-label" for="milk">Milk</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="mayonnaise"><label class="form-check-label" for="mayonnaise">Mayonnaise</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="void-mayonnaise"><label class="form-check-label" for="void-mayonnaise">Void Mayonnaise</label></div>
+                        </div>
+                    </div>
+                </div> <!-- End Animal products --> 
+
+                <!-- Misc --> 
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Misc</h3>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="wheat-flour"><label class="form-check-label" for="wheat-flour">Wheat Flour</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="oil"><label class="form-check-label" for="oil">Oil</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="sugar"><label class="form-check-label" for="sugar">Sugar</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="rice"><label class="form-check-label" for="rice">Rice</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="bread"><label class="form-check-label" for="bread">Bread</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="tortilla"><label class="form-check-label" for="tortilla">Tortilla</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="ingredient-hashbrowns"><label class="form-check-label" for="ingredient-hashbrowns">Hashbrowns</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="ingredient-pancakes"><label class="form-check-label" for="ingredient-pancakes">Pancakes</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="maple-syrup"><label class="form-check-label" for="maple-syrup">Maple Syrup</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="coffee"><label class="form-check-label" for="coffee">Coffee</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="squid-ink"><label class="form-check-label" for="squid-ink">Squid Ink</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="taro-root"><label class="form-check-label" for="taro-root">Taro Root</label></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="periwinkle"><label class="form-check-label" for="periwinkle">Periwinkle</label></div>
+                        </div> 
+                    </div>
+                </div> <!-- End Misc --> 
+
+            </div> <!-- End Ingredients --> 
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4">
+        <p>Happy cooking!</p>
+        <a href="https://www.stardewvalley.net/" target="_blank" rel="noopener noreferrer">
+            Official Stardew Valley Website
+        </a>
+    </footer>
+
+    <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+    
+    <!-- 
+    AI Use Disclosure:
+    Tool(s): ChatGPT (free version)
+    Purpose: Suggested layout options and suggestions for responsiveness.
+    Human Role: I selected which suggestions to use, modified the layout, and verified responsiveness manually.
+    -->
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5f1df;
+    color: #804928;
+    margin: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+h1 {
+    color: #316420;
+}
+
+h2 {
+    font-size: 35px;
+    color: #134582;
+
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 23px;
+    color: #134582;
+}
+
+/* Navbar  */
+.nav-pills .nav-link {
+    font-family: "Inter", sans-serif;
+    color: #804928;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #316420;
+    color: #ffffff;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #78a16c;
+    color: white;
+}
+
+/* Sections */
+section {
+    background-color: #f3d396;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* Recipe images */
+.recipe-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 15px auto 0;
+}
+
+/* Cards */
+.card {
+    background-color: #fffaf0;
+    color: #804928;
+    border: 1px solid #d8c28f;
+}
+
+.card-title {
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #316420;
+    border-color: #316420;
+}
+
+.btn-primary:hover {
+    background-color: #244b18;
+    border-color: #244b18;
+}
+
+/* Checkboxes */
+.form-check-input:checked {
+    background-color: #316420;
+    border-color: #316420;
+}
+
+/* Footer */
+footer {
+    background-color: #316420;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #d8c98b;
+}
